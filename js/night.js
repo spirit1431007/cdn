@@ -2,15 +2,16 @@
 
     //Star模式
 (function(){
+    var ocanvas=document.getElementById("stars");
     if(document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") === ''){
         if(new Date().getHours() > 22 || new Date().getHours() < 6){
             document.body.classList.add('night');
-            stars.style.visibility="visible";
+            ocanvas.style.visibility="visible";
             document.cookie = "night=1;path=/";
             console.log('夜间模式开启');
         }else{
             document.body.classList.remove('night');
-            stars.style.visibility="hidden";
+            ocanvas.style.visibility="hidden";
             document.cookie = "night=0;path=/";
             console.log('夜间模式关闭');
         }
@@ -18,24 +19,25 @@
         var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
         if(night == '0'){
             document.body.classList.remove('night');
-            stars.style.visibility="hidden";
+            ocanvas.style.visibility="hidden";
         }else if(night == '1'){
             document.body.classList.add('night');
-            stars.style.visibility="visible";
+            ocanvas.style.visibility="visible";
         }
     }
 })();
 //Star模式切换
 function switchStarMode(){
     var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
-    if(night == '0'){
+    var ocanvas=document.getElementById("stars");
+    if(night == '0'  || ocanvas.style.visibility=="hidden"){
         document.body.classList.add('night');
-         stars.style.visibility="visible";
+        ocanvas.style.visibility="visible";
         document.cookie = "night=1;path=/"
         console.log('夜间模式开启');
-    }else{
+    }else if(night == '1'  || ocanvas.style.visibility=="visible"){
         document.body.classList.remove('night');
-         stars.style.visibility="hidden";
+        ocanvas.style.visibility="hidden";
         document.cookie = "night=0;path=/"
         console.log('夜间模式关闭');
     }
