@@ -178,8 +178,8 @@ $.ajax({
             text = 'Hello! 用 搜狗搜索 找到我的朋友<br>欢迎阅读<span style="color:#E06020;';
         } else if (domain == 'bing') {
             text = 'Hello! 用 必应 找到我的朋友<br>欢迎阅读<span style="color:#E06020;';
-        } else if (domain == '2heng') {
-            text = '只要微笑就可以了 ^_^';
+        } else if (domain == 'github') {
+            text = '来自GitHub的大佬吗？<br>给大佬递茶。';
         } else if (domain == 'google') {
             text = 'Hello! 来自 Google 的朋友<br>欢迎阅读<span style="color:#E06020;">『' + document.title.split(' - ')[0] + '』</span>';
         }
