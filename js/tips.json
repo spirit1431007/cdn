@@ -16,6 +16,10 @@
 			"selector": ".lower",
 			"text": ["博主很穷的说，快资助一下吧~ヾ(≧∇≦*)ゝ"]
 		},
+        {
+        "selector":"iframe",
+        "text":["你看主人把我扔在这么慢的服务器上，打赏了解一下？"]
+        },
 		{
 			"selector": ".single-reward",
 			"text": ["喜欢这篇文章吗？，喜欢就打赏一下吧~<br> ヾ(≧∇≦*)ゝ"]
@@ -35,10 +39,6 @@
         {
             "selector": ".site-title",
             "text": ["点击LOGO前往首页，想回到上一页可以使用浏览器的后退功能哦"]
-        },
-        {
-            "selector": ".wechat",
-            "text": ["微信~"]
         },
         {
             "selector": ".guesswhat",
@@ -117,26 +117,6 @@
             "text": ["这里是菜单"]
         },
         {
-            "selector": "c-player a.play-icon",
-            "text": ["想要听点音乐吗"]
-        },
-        {
-            "selector": "c-player div.time",
-            "text": ["在这里可以调整<span style=\"color:#E06020;\">播放进度</span>呢"]
-        },
-        {
-            "selector": "c-player div.volume",
-            "text": ["在这里可以调整<span style=\"color:#E06020;\">音量</span>呢"]
-        },
-        {
-            "selector": "c-player div.list-button",
-            "text": ["<span style=\"color:#E06020;\">播放列表</span>里都有什么呢"]
-        },
-        {
-            "selector": "c-player div.lyric-button",
-            "text": ["有<span style=\"color:#E06020;\">歌词</span>的话就能跟着一起唱呢"]
-        },
-        {
             "selector": "#white-bg",
             "text": ["默认是纯洁的白色~~"]
         },
@@ -171,6 +151,10 @@
         {
             "selector": ".prpr #live2d",
             "text": ["干嘛呢你，快把手拿开", "鼠…鼠标放错地方了！", "么么哒~ (*･´ω`･)っ"]
+        },
+        {
+            "selector": ".searchbox",
+            "text": ["在找什么呢，需要帮忙吗？"]
         }
     ],
     "click": [
