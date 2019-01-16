@@ -138,7 +138,7 @@ thirdpart = function() {
 fourthpart = function() {
     botui.message.add({
         delay: 1E3,
-        content: "emmmm,,,说实话，这域名是我乱输的，所以近期在考虑换域名的相关事宜 "
+        content: "Spirit是我的名字,而X是我汉字贤拼音的第一个首字母,这两个东西都对我有重要意义 "
     }).then(function() {
         botui.message.add({
             delay: 1600,

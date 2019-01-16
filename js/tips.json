@@ -17,6 +17,10 @@
 			"text": ["博主很穷的说，快资助一下吧~ヾ(≧∇≦*)ゝ"]
 		},
         {
+            "selector": ".searchbox",
+            "text": ["在找什么呢，需要帮忙吗？"]
+        },
+        {
         "selector":"iframe",
         "text":["你看主人把我扔在这么慢的服务器上，打赏了解一下？"]
         },
@@ -39,6 +43,10 @@
         {
             "selector": ".site-title",
             "text": ["点击LOGO前往首页，想回到上一页可以使用浏览器的后退功能哦"]
+        },
+        {
+            "selector": ".top-social_v2",
+            "text": ["这里是主人的社交账号啦！不关注一波嘛？"]
         },
         {
             "selector": ".guesswhat",
@@ -153,8 +161,8 @@
             "text": ["干嘛呢你，快把手拿开", "鼠…鼠标放错地方了！", "么么哒~ (*･´ω`･)っ"]
         },
         {
-            "selector": ".searchbox",
-            "text": ["在找什么呢，需要帮忙吗？"]
+            "selector": "#pagination",
+            "text": ["想看看更久远的内容？"]
         }
     ],
     "click": [

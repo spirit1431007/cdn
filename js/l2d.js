@@ -31,6 +31,7 @@ mashiro_global.ini.live2d = function () {
         hide_live2d();
     }
 }
+mashiro_global.ini.live2d();
 
 function checkPIOCookie() {
     var donotneed = getCookie("dontwantlive2d");
@@ -40,20 +41,30 @@ function checkPIOCookie() {
             $(".prpr").css("visibility", "hidden");
             console.log("If you want to see live2d please clean cookie!");
         } else {
-            pio();
+            loadlive2d("live2d", "https://spiritx.xyz/live2d/model/getmodel.php");
         }
     } else {
-        pio();
+        loadlive2d("live2d", "https://spiritx.xyz/live2d/model/getmodel.php");
     }
 }
 
 function pio() {
-    loadlive2d("live2d", "https://spirit143107.ooo/live2d/model/getmodel.php");
+    loadlive2d("live2d", "https://spiritx.xyz/live2d/model/getmodel.php");
 }
 pio();
 
 function switch_pio() {
+    if (isIE || isEdge) {
+        addComment.createButterbar("此功能不支持您的浏览器<br>Feature cannot work on your browser");
+        return false;
+    } else if (isChrome) {
         pio();
+    } else if (isSafari) {
+        addComment.createButterbar("此功能不支持您的浏览器<br>Feature cannot work on your browser");
+        return false;
+    } else {
+        pio();
+    }
 }
 
 function save_pio() {
@@ -61,6 +72,25 @@ function save_pio() {
     window.Live2D.captureFrame = true;
     addComment.createButterbar("保存成功！<br>Screenshot saved!", 1000);
 }
+if (!window.is_app) {
+    var userAgent = navigator.userAgent;
+    console.log('userAgent = ' + userAgent);
+    console.log('window inner size: ' + window.innerWidth + ' x ' + window.innerHeight);
+    var isOpera = userAgent.indexOf("Opera") > -1;
+    var isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+    var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera;
+    var isEdge = userAgent.indexOf("Edge") > -1;
+    var isSafari = userAgent.indexOf("Safari") > -1;
+    if (isIE || isEdge) {
+        loadlive2d("live2d", "https://spiritx.xyz/live2d/model/getmodel.php");
+    } else if (isChrome) {
+        pio();
+    } else if (isSafari) {
+        loadlive2d("live2d", "https://spiritx.xyz/live2d/model/getmodel.php");
+    } else {
+        pio();
+    }
+};
 
 function render(template, context) {
     var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
@@ -92,7 +122,7 @@ $(document).on('copy', function () {
 });
 $.ajax({
     cache: true,
-    url: "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.21/js/tips.json",
+    url: "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.35/js/tips.json",
     dataType: "json",
     success: function (result) {
         $.each(result.mouseover, function (index, tips) {
@@ -138,7 +168,7 @@ $.ajax({
             text = 'Hello! 来自 Google 的朋友<br>欢迎阅读<span style="color:#E06020;">『' + document.title.split(' - ')[0] + '』</span>';
         }
     } else {
-        if (window.location.href == 'https://spirit143107.ooo/') {
+        if (window.location.href == 'https://spiritx.xyz/') {
             var now = (new Date()).getHours();
             if (now > 23 || now <= 5) {
                 text = '你是夜猫子呀？这么晚还不睡觉，明天起得来嘛?';
@@ -159,7 +189,7 @@ $.ajax({
             } else {
                 text = '嗨~ 快来逗我玩吧！';
             }
-        } else if (window.location.href == 'https://spirit143107.ooo/about/') {
+        } else if (window.location.href == 'https://spiritx.xyz/about/') {
             text = 'Do you like me? ヾ(≧?≦*)ゝ';
         } else {
             text = '欢迎阅读<span style="color:#E06020;">『' + document.title.split(' - ')[0] + '』</span>';
@@ -170,7 +200,7 @@ $.ajax({
 window.setInterval(showHitokoto, 30000);
 
 function showHitokoto() {
-    $.get('https://spirit143107.ooo/yan/', function (result) {
+    $.get('https://spiritx.xyz/yan/', function (result) {
         showMessage(result, 16000);
     });
 }
@@ -189,4 +219,5 @@ function hideMessage(timeout) {
     $('.mashiro-tips').delay(timeout).fadeTo(200, 0);
 }
 
-mashiro_global.ini.live2d;  
+
+mashiro_global.ini.live2d;
