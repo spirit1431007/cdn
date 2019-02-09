@@ -48,7 +48,10 @@ function checkPIOCookie() {
     }
 }
 
+var Live2D_img_path="";
+
 function pio() {
+    Live2D_img_path = 'https://spiritx.xyz/live2d/model/getmodel.php';
     loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.5/img/live2d/appv4.json");
 }
 pio();
