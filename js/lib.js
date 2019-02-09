@@ -1,4 +1,4 @@
-/*! Generate by Spirit. Sat Feb  9 15:41:20 2019*/
+/*! Generate by Spirit. Sat Feb  9 23:17:42 2019*/
 !function(t){function i(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,i),o.l=!0,o.exports}
 var e={};i.m=t,i.c=e,i.d=function(t,e,r){i.o(t,e)||Object.defineProperty(t,e,{configurable:!1,enumerable:!0,get:r})},i.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return i.d(e,"a",e),e},i.o=function(t,i){return Object.prototype.hasOwnProperty.call(t,i)},i.p="",i(i.s=4)}([function(t,i,e){"use strict";function r(){this.live2DModel=null,this.modelMatrix=null,this.eyeBlink=null,this.physics=null,this.pose=null,this.debugMode=!1,this.initialized=!1,this.updating=!1,this.alpha=1,this.accAlpha=0,this.lipSync=!1,this.lipSyncValue=0,this.accelX=0,this.accelY=0,this.accelZ=0,this.dragX=0,this.dragY=0,this.startTimeMSec=null,this.mainMotionManager=new h,this.expressionManager=new h,this.motions={},this.expressions={},this.isTexLoaded=!1}
 function o(){AMotion.prototype.constructor.call(this),this.paramList=new Array}
