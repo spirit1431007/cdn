@@ -87,11 +87,13 @@ if (!window.is_app) {
     if (isIE || isEdge) {
         Live2D_img_path = 'https://spiritx.xyz/live2d/model/getmodel.php';
         loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.5/img/live2d/model-default.json");
+        hide_live2d();
     } else if (isChrome) {
         pio();
     } else if (isSafari) {
         Live2D_img_path = 'https://spiritx.xyz/live2d/model/getmodel.php';
         loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.5/img/live2d/model-default.json");
+        hide_live2d();
     } else {
         pio();
     }
