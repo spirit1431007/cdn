@@ -122,7 +122,7 @@ secondpart = function() {
 thirdpart = function() {
     botui.message.add({
         delay: 1E3,
-        content: "spirit有精神和灵魂之意，我已饱满的精神和纯净的灵魂为自身追求"
+        content: "spirit有精神和灵魂之意，我以饱满的精神和纯净的灵魂为自身追求"
     }).then(function() {
         botui.action.button({
             delay: 1500,
