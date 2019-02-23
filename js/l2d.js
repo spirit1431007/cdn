@@ -41,18 +41,18 @@ function checkPIOCookie() {
             $(".prpr").css("visibility", "hidden");
             console.log("If you want to see live2d please clean cookie!");
         } else {
-            loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.5/img/live2d/appv4.json");
+            loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.535/img/live2d/appv4.json");
         }
     } else {
-        loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.5/img/live2d/appv4.json");
+        loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.535/img/live2d/appv4.json");
     }
 }
 
 var Live2D_img_path="";
 
 function pio() {
-    Live2D_img_path = 'https://spiritx.xyz/live2d/model/getmodel.php';
-    loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.5/img/live2d/appv4.json");
+    Live2D_img_path = 'https://spiritx.xyz/live2d/model/api/';
+    loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.535/img/live2d/appv4.json");
 }
 pio();
 
@@ -85,14 +85,14 @@ if (!window.is_app) {
     var isEdge = userAgent.indexOf("Edge") > -1;
     var isSafari = userAgent.indexOf("Safari") > -1;
     if (isIE || isEdge) {
-        Live2D_img_path = 'https://spiritx.xyz/live2d/model/getmodel.php';
-        loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.5/img/live2d/model-default.json");
+        Live2D_img_path = 'https://spiritx.xyz/live2d/model/api/';
+        loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.535/img/live2d/model-default.json");
         hide_live2d();
     } else if (isChrome) {
         pio();
     } else if (isSafari) {
-        Live2D_img_path = 'https://spiritx.xyz/live2d/model/getmodel.php';
-        loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.5/img/live2d/model-default.json");
+        Live2D_img_path = 'https://spiritx.xyz/live2d/model/api/';
+        loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.535/img/live2d/model-default.json");
         hide_live2d();
     } else {
         pio();
