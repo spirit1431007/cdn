@@ -97,6 +97,10 @@
             "text": ["认真填写哦，垃圾评论是禁止事项~<br><span style=\"color:#ff4000;\">图片仅支持BBCode！</span>"]
         },
         {
+            "selector": "#emotion-toggle",
+            "text": ["来一发表情吗？"]
+        },
+        {
             "selector": "#submit",
             "text": ["要提交了吗，收到回复会有邮件通知的哦~"]
         },
