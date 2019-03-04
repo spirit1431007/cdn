@@ -2,7 +2,7 @@
     "version":"1.0.0",
     "model":"model.moc",
     "textures":[
-        "https://spiritx.xyz/live2d/model/api/"
+        "https://spiritx.xyz/live2d/api/model/api/"
     ],
     "layout":{
         "center_x":0.0,
