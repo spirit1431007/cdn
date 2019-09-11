@@ -50,6 +50,229 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+@-webkit-keyframes hue{
+0% {color:#464646;filter:blur(0px)}
+20% {color:#EE7752}
+40% {color:#E73C7E}
+50% {filter:blur(.6px)}
+60% {color:#23A6D5}
+80% {color:#23D5AB}
+100% {color:#464646;filter:blur(0px)}
+}
+@keyframes hue{
+0% {color:#464646;filter:blur(0px)}
+20% {color:#EE7752}
+40% {color:#E73C7E}
+50% {filter:blur(.6px)}
+60% {color:#23A6D5}
+80% {color:#23D5AB}
+100% {color:#464646;filter:blur(0px)}
+}
+@keyframes waveloop1{
+    0% {left: -236px}
+    100% {left: -1233px}
+}
+@-webkit-keyframes waveloop1{
+    0% {left: -236px}
+    100% {left: -1233px}
+}
+@keyframes waveloop2{
+    0% {left: 0px}
+    100% {left: -1009px}
+}
+@-webkit-keyframes waveloop2{
+    0% {left: 0px}
+    100% {left: -1009px}
+}
+@-webkit-keyframes spirit-sakura{0%{color:#FFC0cB}
+11%{color:#FFC0cB}
+13%{color:#EADCD6}
+22%{color:#EADCD6}
+24%{color:#E3EFD1}
+33%{color:#E3EFD1}
+35%{color:#D1E3DB}
+44%{color:#D1E3DB}
+46%{color:#7BA1A8}
+55%{color:#7BA1A8}
+57%{color:#C3A6CB}
+66%{color:#C3A6CB}
+68%{color:#DD3B44}
+77%{color:#DD3B44}
+79%{color:#F2DE76}
+88%{color:#F2DE76}
+90%{color:#FFC0cB}
+100%{color:#FFC0cB}
+}
+@keyframes spirit-sakura{0%{color:#FFC0cB}
+11%{color:#FFC0cB}
+13%{color:#EADCD6}
+22%{color:#EADCD6}
+24%{color:#E3EFD1}
+33%{color:#E3EFD1}
+35%{color:#D1E3DB}
+44%{color:#D1E3DB}
+46%{color:#7BA1A8}
+55%{color:#7BA1A8}
+57%{color:#C3A6CB}
+66%{color:#C3A6CB}
+68%{color:#DD3B44}
+77%{color:#DD3B44}
+79%{color:#F2DE76}
+88%{color:#F2DE76}
+90%{color:#FFC0cB}
+100%{color:#FFC0cB}
+}
+@keyframes shake-smiley{2%{-webkit-transform:translateY(1.5px) rotate(1.5deg);transform:translateY(1.5px) rotate(1.5deg)}
+4%{-webkit-transform:translateY(-1.5px) rotate(-.5deg);transform:translateY(-1.5px) rotate(-.5deg)}
+6%{-webkit-transform:translateY(1.5px) rotate(-1.5deg);transform:translateY(1.5px) rotate(-1.5deg)}
+8%{-webkit-transform:translateY(-1.5px) rotate(-1.5deg);transform:translateY(-1.5px) rotate(-1.5deg)}
+10%{-webkit-transform:translateY(2.5px) rotate(1.5deg);transform:translateY(2.5px) rotate(1.5deg)}
+12%{-webkit-transform:translateY(-.5px) rotate(1.5deg);transform:translateY(-.5px) rotate(1.5deg)}
+14%{-webkit-transform:translateY(-1.5px) rotate(1.5deg);transform:translateY(-1.5px) rotate(1.5deg)}
+16%{-webkit-transform:translateY(-.5px) rotate(-1.5deg);transform:translateY(-.5px) rotate(-1.5deg)}
+18%{-webkit-transform:translateY(.5px) rotate(-1.5deg);transform:translateY(.5px) rotate(-1.5deg)}
+20%{-webkit-transform:translateY(-1.5px) rotate(2.5deg);transform:translateY(-1.5px) rotate(2.5deg)}
+22%{-webkit-transform:translateY(.5px) rotate(-1.5deg);transform:translateY(.5px) rotate(-1.5deg)}
+24%{-webkit-transform:translateY(1.5px) rotate(1.5deg);transform:translateY(1.5px) rotate(1.5deg)}
+26%{-webkit-transform:translateY(.5px) rotate(.5deg);transform:translateY(.5px) rotate(.5deg)}
+28%{-webkit-transform:translateY(.5px) rotate(1.5deg);transform:translateY(.5px) rotate(1.5deg)}
+30%{-webkit-transform:translateY(-.5px) rotate(2.5deg);transform:translateY(-.5px) rotate(2.5deg)}
+32%,34%{-webkit-transform:translateY(1.5px) rotate(-.5deg);transform:translateY(1.5px) rotate(-.5deg)}
+36%{-webkit-transform:translateY(-1.5px) rotate(2.5deg);transform:translateY(-1.5px) rotate(2.5deg)}
+38%{-webkit-transform:translateY(1.5px) rotate(-1.5deg);transform:translateY(1.5px) rotate(-1.5deg)}
+40%{-webkit-transform:translateY(-.5px) rotate(2.5deg);transform:translateY(-.5px) rotate(2.5deg)}
+42%{-webkit-transform:translateY(2.5px) rotate(-1.5deg);transform:translateY(2.5px) rotate(-1.5deg)}
+44%{-webkit-transform:translateY(1.5px) rotate(.5deg);transform:translateY(1.5px) rotate(.5deg)}
+46%{-webkit-transform:translateY(-1.5px) rotate(2.5deg);transform:translateY(-1.5px) rotate(2.5deg)}
+48%{-webkit-transform:translateY(-.5px) rotate(.5deg);transform:translateY(-.5px) rotate(.5deg)}
+50%{-webkit-transform:translateY(.5px) rotate(.5deg);transform:translateY(.5px) rotate(.5deg)}
+52%{-webkit-transform:translateY(2.5px) rotate(2.5deg);transform:translateY(2.5px) rotate(2.5deg)}
+54%{-webkit-transform:translateY(-1.5px) rotate(1.5deg);transform:translateY(-1.5px) rotate(1.5deg)}
+56%{-webkit-transform:translateY(2.5px) rotate(2.5deg);transform:translateY(2.5px) rotate(2.5deg)}
+58%{-webkit-transform:translateY(.5px) rotate(2.5deg);transform:translateY(.5px) rotate(2.5deg)}
+60%{-webkit-transform:translateY(2.5px) rotate(2.5deg);transform:translateY(2.5px) rotate(2.5deg)}
+62%{-webkit-transform:translateY(-.5px) rotate(2.5deg);transform:translateY(-.5px) rotate(2.5deg)}
+64%{-webkit-transform:translateY(-.5px) rotate(1.5deg);transform:translateY(-.5px) rotate(1.5deg)}
+66%{-webkit-transform:translateY(1.5px) rotate(-.5deg);transform:translateY(1.5px) rotate(-.5deg)}
+68%{-webkit-transform:translateY(-1.5px) rotate(-.5deg);transform:translateY(-1.5px) rotate(-.5deg)}
+70%{-webkit-transform:translateY(1.5px) rotate(.5deg);transform:translateY(1.5px) rotate(.5deg)}
+72%{-webkit-transform:translateY(2.5px) rotate(1.5deg);transform:translateY(2.5px) rotate(1.5deg)}
+74%{-webkit-transform:translateY(-.5px) rotate(.5deg);transform:translateY(-.5px) rotate(.5deg)}
+76%{-webkit-transform:translateY(-.5px) rotate(2.5deg);transform:translateY(-.5px) rotate(2.5deg)}
+78%{-webkit-transform:translateY(-.5px) rotate(1.5deg);transform:translateY(-.5px) rotate(1.5deg)}
+80%{-webkit-transform:translateY(1.5px) rotate(1.5deg);transform:translateY(1.5px) rotate(1.5deg)}
+82%{-webkit-transform:translateY(-.5px) rotate(.5deg);transform:translateY(-.5px) rotate(.5deg)}
+84%{-webkit-transform:translateY(1.5px) rotate(2.5deg);transform:translateY(1.5px) rotate(2.5deg)}
+86%{-webkit-transform:translateY(-1.5px) rotate(-1.5deg);transform:translateY(-1.5px) rotate(-1.5deg)}
+88%{-webkit-transform:translateY(-.5px) rotate(2.5deg);transform:translateY(-.5px) rotate(2.5deg)}
+90%{-webkit-transform:translateY(2.5px) rotate(-.5deg);transform:translateY(2.5px) rotate(-.5deg)}
+92%{-webkit-transform:translateY(.5px) rotate(-.5deg);transform:translateY(.5px) rotate(-.5deg)}
+94%{-webkit-transform:translateY(2.5px) rotate(.5deg);transform:translateY(2.5px) rotate(.5deg)}
+96%{-webkit-transform:translateY(-.5px) rotate(1.5deg);transform:translateY(-.5px) rotate(1.5deg)}
+98%{-webkit-transform:translateY(-1.5px) rotate(-.5deg);transform:translateY(-1.5px) rotate(-.5deg)}
+0%,to{-webkit-transform:translate(0) rotate(0deg);transform:translate(0) rotate(0deg)}
+}
+@-webkit-keyframes shake-smiley{2%{-webkit-transform:translateY(1.5px) rotate(1.5deg);transform:translateY(1.5px) rotate(1.5deg)}
+4%{-webkit-transform:translateY(-1.5px) rotate(-.5deg);transform:translateY(-1.5px) rotate(-.5deg)}
+6%{-webkit-transform:translateY(1.5px) rotate(-1.5deg);transform:translateY(1.5px) rotate(-1.5deg)}
+8%{-webkit-transform:translateY(-1.5px) rotate(-1.5deg);transform:translateY(-1.5px) rotate(-1.5deg)}
+10%{-webkit-transform:translateY(2.5px) rotate(1.5deg);transform:translateY(2.5px) rotate(1.5deg)}
+12%{-webkit-transform:translateY(-.5px) rotate(1.5deg);transform:translateY(-.5px) rotate(1.5deg)}
+14%{-webkit-transform:translateY(-1.5px) rotate(1.5deg);transform:translateY(-1.5px) rotate(1.5deg)}
+16%{-webkit-transform:translateY(-.5px) rotate(-1.5deg);transform:translateY(-.5px) rotate(-1.5deg)}
+18%{-webkit-transform:translateY(.5px) rotate(-1.5deg);transform:translateY(.5px) rotate(-1.5deg)}
+20%{-webkit-transform:translateY(-1.5px) rotate(2.5deg);transform:translateY(-1.5px) rotate(2.5deg)}
+22%{-webkit-transform:translateY(.5px) rotate(-1.5deg);transform:translateY(.5px) rotate(-1.5deg)}
+24%{-webkit-transform:translateY(1.5px) rotate(1.5deg);transform:translateY(1.5px) rotate(1.5deg)}
+26%{-webkit-transform:translateY(.5px) rotate(.5deg);transform:translateY(.5px) rotate(.5deg)}
+28%{-webkit-transform:translateY(.5px) rotate(1.5deg);transform:translateY(.5px) rotate(1.5deg)}
+30%{-webkit-transform:translateY(-.5px) rotate(2.5deg);transform:translateY(-.5px) rotate(2.5deg)}
+32%,34%{-webkit-transform:translateY(1.5px) rotate(-.5deg);transform:translateY(1.5px) rotate(-.5deg)}
+36%{-webkit-transform:translateY(-1.5px) rotate(2.5deg);transform:translateY(-1.5px) rotate(2.5deg)}
+38%{-webkit-transform:translateY(1.5px) rotate(-1.5deg);transform:translateY(1.5px) rotate(-1.5deg)}
+40%{-webkit-transform:translateY(-.5px) rotate(2.5deg);transform:translateY(-.5px) rotate(2.5deg)}
+42%{-webkit-transform:translateY(2.5px) rotate(-1.5deg);transform:translateY(2.5px) rotate(-1.5deg)}
+44%{-webkit-transform:translateY(1.5px) rotate(.5deg);transform:translateY(1.5px) rotate(.5deg)}
+46%{-webkit-transform:translateY(-1.5px) rotate(2.5deg);transform:translateY(-1.5px) rotate(2.5deg)}
+48%{-webkit-transform:translateY(-.5px) rotate(.5deg);transform:translateY(-.5px) rotate(.5deg)}
+50%{-webkit-transform:translateY(.5px) rotate(.5deg);transform:translateY(.5px) rotate(.5deg)}
+52%{-webkit-transform:translateY(2.5px) rotate(2.5deg);transform:translateY(2.5px) rotate(2.5deg)}
+54%{-webkit-transform:translateY(-1.5px) rotate(1.5deg);transform:translateY(-1.5px) rotate(1.5deg)}
+56%{-webkit-transform:translateY(2.5px) rotate(2.5deg);transform:translateY(2.5px) rotate(2.5deg)}
+58%{-webkit-transform:translateY(.5px) rotate(2.5deg);transform:translateY(.5px) rotate(2.5deg)}
+60%{-webkit-transform:translateY(2.5px) rotate(2.5deg);transform:translateY(2.5px) rotate(2.5deg)}
+62%{-webkit-transform:translateY(-.5px) rotate(2.5deg);transform:translateY(-.5px) rotate(2.5deg)}
+64%{-webkit-transform:translateY(-.5px) rotate(1.5deg);transform:translateY(-.5px) rotate(1.5deg)}
+66%{-webkit-transform:translateY(1.5px) rotate(-.5deg);transform:translateY(1.5px) rotate(-.5deg)}
+68%{-webkit-transform:translateY(-1.5px) rotate(-.5deg);transform:translateY(-1.5px) rotate(-.5deg)}
+70%{-webkit-transform:translateY(1.5px) rotate(.5deg);transform:translateY(1.5px) rotate(.5deg)}
+72%{-webkit-transform:translateY(2.5px) rotate(1.5deg);transform:translateY(2.5px) rotate(1.5deg)}
+74%{-webkit-transform:translateY(-.5px) rotate(.5deg);transform:translateY(-.5px) rotate(.5deg)}
+76%{-webkit-transform:translateY(-.5px) rotate(2.5deg);transform:translateY(-.5px) rotate(2.5deg)}
+78%{-webkit-transform:translateY(-.5px) rotate(1.5deg);transform:translateY(-.5px) rotate(1.5deg)}
+80%{-webkit-transform:translateY(1.5px) rotate(1.5deg);transform:translateY(1.5px) rotate(1.5deg)}
+82%{-webkit-transform:translateY(-.5px) rotate(.5deg);transform:translateY(-.5px) rotate(.5deg)}
+84%{-webkit-transform:translateY(1.5px) rotate(2.5deg);transform:translateY(1.5px) rotate(2.5deg)}
+86%{-webkit-transform:translateY(-1.5px) rotate(-1.5deg);transform:translateY(-1.5px) rotate(-1.5deg)}
+88%{-webkit-transform:translateY(-.5px) rotate(2.5deg);transform:translateY(-.5px) rotate(2.5deg)}
+90%{-webkit-transform:translateY(2.5px) rotate(-.5deg);transform:translateY(2.5px) rotate(-.5deg)}
+92%{-webkit-transform:translateY(.5px) rotate(-.5deg);transform:translateY(.5px) rotate(-.5deg)}
+94%{-webkit-transform:translateY(2.5px) rotate(.5deg);transform:translateY(2.5px) rotate(.5deg)}
+96%{-webkit-transform:translateY(-.5px) rotate(1.5deg);transform:translateY(-.5px) rotate(1.5deg)}
+98%{-webkit-transform:translateY(-1.5px) rotate(-.5deg);transform:translateY(-1.5px) rotate(-.5deg)}
+0%,to{-webkit-transform:translate(0) rotate(0deg);transform:translate(0) rotate(0deg)}
+}
+@keyframes shake{2%{transform:translate(.5px,-1.5px) rotate(-.5deg)}
+4%{transform:translate(.5px,1.5px) rotate(1.5deg)}
+6%{transform:translate(1.5px,1.5px) rotate(1.5deg)}
+8%{transform:translate(2.5px,1.5px) rotate(.5deg)}
+10%{transform:translate(.5px,2.5px) rotate(.5deg)}
+12%{transform:translate(1.5px,1.5px) rotate(.5deg)}
+14%{transform:translate(.5px,.5px) rotate(.5deg)}
+16%{transform:translate(-1.5px,-.5px) rotate(1.5deg)}
+18%{transform:translate(.5px,.5px) rotate(1.5deg)}
+20%{transform:translate(2.5px,2.5px) rotate(1.5deg)}
+22%{transform:translate(.5px,-1.5px) rotate(1.5deg)}
+24%{transform:translate(-1.5px,1.5px) rotate(-.5deg)}
+26%{transform:translate(1.5px,.5px) rotate(1.5deg)}
+28%{transform:translate(-.5px,-.5px) rotate(-.5deg)}
+30%{transform:translate(1.5px,-.5px) rotate(-.5deg)}
+32%{transform:translate(2.5px,-1.5px) rotate(1.5deg)}
+34%{transform:translate(2.5px,2.5px) rotate(-.5deg)}
+36%{transform:translate(.5px,-1.5px) rotate(.5deg)}
+38%{transform:translate(2.5px,-.5px) rotate(-.5deg)}
+40%{transform:translate(-.5px,2.5px) rotate(.5deg)}
+42%{transform:translate(-1.5px,2.5px) rotate(.5deg)}
+44%{transform:translate(-1.5px,1.5px) rotate(.5deg)}
+46%{transform:translate(1.5px,-.5px) rotate(-.5deg)}
+48%{transform:translate(2.5px,-.5px) rotate(.5deg)}
+50%{transform:translate(-1.5px,1.5px) rotate(.5deg)}
+52%{transform:translate(-.5px,1.5px) rotate(.5deg)}
+54%{transform:translate(-1.5px,1.5px) rotate(.5deg)}
+56%{transform:translate(.5px,2.5px) rotate(1.5deg)}
+58%{transform:translate(2.5px,2.5px) rotate(.5deg)}
+60%{transform:translate(2.5px,-1.5px) rotate(1.5deg)}
+62%{transform:translate(-1.5px,.5px) rotate(1.5deg)}
+64%{transform:translate(-1.5px,1.5px) rotate(1.5deg)}
+66%{transform:translate(.5px,2.5px) rotate(1.5deg)}
+68%{transform:translate(2.5px,-1.5px) rotate(1.5deg)}
+70%{transform:translate(2.5px,2.5px) rotate(.5deg)}
+72%{transform:translate(-.5px,-1.5px) rotate(1.5deg)}
+74%{transform:translate(-1.5px,2.5px) rotate(1.5deg)}
+76%{transform:translate(-1.5px,2.5px) rotate(1.5deg)}
+78%{transform:translate(-1.5px,2.5px) rotate(.5deg)}
+80%{transform:translate(-1.5px,.5px) rotate(-.5deg)}
+82%{transform:translate(-1.5px,.5px) rotate(-.5deg)}
+84%{transform:translate(-.5px,.5px) rotate(1.5deg)}
+86%{transform:translate(2.5px,1.5px) rotate(.5deg)}
+88%{transform:translate(-1.5px,.5px) rotate(1.5deg)}
+90%{transform:translate(-1.5px,-.5px) rotate(-.5deg)}
+92%{transform:translate(-1.5px,-1.5px) rotate(1.5deg)}
+94%{transform:translate(.5px,.5px) rotate(-.5deg)}
+96%{transform:translate(2.5px,-.5px) rotate(-.5deg)}
+98%{transform:translate(-1.5px,-1.5px) rotate(-.5deg)}
+0%,100%{transform:translate(0,0) rotate(0)}
+} 
 /* Fix: Aplayer beautify*/
 .aplayer {
     background: rgba(255, 255, 255, .3);
