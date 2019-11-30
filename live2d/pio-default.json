@@ -1,0 +1,77 @@
+{
+    "version":"1.0.0",
+    "model":"model/pio.moc",
+    "textures":[
+        "https://spiritx.xyz/api/live2d/pio/"
+    ],
+    "layout":{
+        "center_x":0.0,
+        "center_y":-0.05,
+        "width":2.0
+    },
+    "hit_areas_custom":{
+        "head_x":[-0.35, 0.6],
+        "head_y":[0.19, -0.2],
+        "body_x":[-0.3, -0.25],
+        "body_y":[0.3, -0.9]
+    },
+    "motions":{
+        "idle":[
+            {"file":"model/WakeUp.mtn"},
+            {"file":"model/Breath1.mtn"},
+            {"file":"model/Breath2.mtn"},
+            {"file":"model/Breath3.mtn"},
+            {"file":"model/Breath5.mtn"},
+            {"file":"model/Breath7.mtn"},
+            {"file":"model/Breath8.mtn"}
+        ],
+        "sleepy":[
+            {"file":"model/Sleeping.mtn"}
+        ],
+        "flick_head":[
+            {"file":"model/Touch Dere1.mtn"},
+            {"file":"model/Touch Dere2.mtn"},
+            {"file":"model/Touch Dere3.mtn"},
+            {"file":"model/Touch Dere4.mtn"},
+            {"file":"model/Touch Dere5.mtn"},
+            {"file":"model/Touch Dere6.mtn"}
+        ],
+        "tap_body":[
+            {"file":"model/Touch1.mtn"},
+            {"file":"model/Touch2.mtn"},
+            {"file":"model/Touch3.mtn"},
+            {"file":"model/Touch4.mtn"},
+            {"file":"model/Touch5.mtn"},
+            {"file":"model/Touch6.mtn"}
+        ],
+        "":[
+            {"file":"model/Breath1.mtn"},
+            {"file":"model/Breath2.mtn"},
+            {"file":"model/Breath3.mtn"},
+            {"file":"model/Breath4.mtn"},
+            {"file":"model/Breath5.mtn"},
+            {"file":"model/Breath6.mtn"},
+            {"file":"model/Breath7.mtn"},
+            {"file":"model/Breath8.mtn"},
+            {"file":"model/Fail.mtn"},
+            {"file":"model/Sleeping.mtn"},
+            {"file":"model/Success.mtn"},
+            {"file":"model/Sukebei1.mtn"},
+            {"file":"model/Sukebei2.mtn"},
+            {"file":"model/Sukebei3.mtn"},
+            {"file":"model/Touch Dere1.mtn"},
+            {"file":"model/Touch Dere2.mtn"},
+            {"file":"model/Touch Dere3.mtn"},
+            {"file":"model/Touch Dere4.mtn"},
+            {"file":"model/Touch Dere5.mtn"},
+            {"file":"model/Touch Dere6.mtn"},
+            {"file":"model/Touch1.mtn"},
+            {"file":"model/Touch2.mtn"},
+            {"file":"model/Touch3.mtn"},
+            {"file":"model/Touch4.mtn"},
+            {"file":"model/Touch5.mtn"},
+            {"file":"model/Touch6.mtn"},
+            {"file":"model/WakeUp.mtn"}
+        ]
+    }
+}
