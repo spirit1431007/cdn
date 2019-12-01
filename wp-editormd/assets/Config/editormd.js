@@ -121,7 +121,7 @@
                 }
             }
         });
-        // WP Media module支持
+        /* WP Media module支持markdown
         if (typeof wp !== 'undefined' && typeof wp.media !== 'undefined') {
             var original_wp_media_editor_insert = wp.media.editor.insert;
             var turndownService = new TurndownService();
@@ -130,6 +130,14 @@
                 original_wp_media_editor_insert(markdown);
                 wpEditormd.insertValue(markdown);
             };
+        }*/
+        // WP Media module支持
+        if (typeof wp !== 'undefined' && typeof wp.media !== 'undefined') {
+            var original_wp_media_editor_insert = wp.media.editor.insert;
+            wp.media.editor.insert = function (html) {
+            original_wp_media_editor_insert(html);
+            wpEditormd.insertValue(html);
+        };
         }
         // 图像粘贴
         if (editor.imagePaste === 'on') {
